@@ -1,23 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bootstrap demo</title>
   <link rel="stylesheet" href="broad.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand">Udemy</a>
-    <form class="d-flex me-auto" role="search">
-      <input class="form me-2  sea" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+<body style="  background-color: rgb(242,242,243);">
+  <div class="digi">
+  <h1>Digital Skills</h1>
+  <p>Empower yourself with our Digital Skills course, designed to equip individuals with <br> essential competencies for
+    the digital age. From foundational computer literacy to <br> advanced digital communication, this program ensures
+    you are well-versed in the <br> skills crucial for success in today's technology-driven world.</p>
+  <div class="gap-3  sta">
+    <i class='bx bxs-user-circle fs-4'></i>
+    <p>Created by <a href="#" class="text-decoration-none">Tech Admin</a></p>
+    <i class='bx bx-time-five fs-4'></i>
+    <p>00:00:00 Hours</p>
+    <i class='bx bx-user fs-4'></i>
+    <p>0 Enrolled</p>
+    <span class="d-flex">
+      <i class='bx bxs-star fs-4'></i><i class='bx bxs-star fs-4'></i><i class='bx bxs-star fs-4'></i><i
+        class='bx bxs-star fs-4'></i><i class='bx bxs-star fs-4'></i>
+      <p>
+        (0 Reviews)</p>
+    </span>
   </div>
-</nav>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <span class="d-flex"><i class='bx bx-calendar fs-4'></i>
+    <p>
+      Last updated Thu, 18-Jan-2024</p>
+  </span>
+</div>
+
+<div>
+  <div class="card-o" style="width: 20rem; margin-top: -5rem;margin-right: 3rem;  float: right;">
+    <img src="img/digital.jpg" class="card-img-bottom " alt="...">
+    <div class="card-body">
+      <h5 class="card-title fs-2 mt-3 mx-4 mb-4"># 100,000</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><i class='bx bxs-book fs-3'></i>Lectures <span>8</span></li>
+      <li class="list-group-item"><i class='bx bx-cog fs-3'></i>Skill  level <span>Beginner</span></li>
+      <li class="list-group-item"><i class='bx bx-flag fs-3'></i>Expiry period <span>Lifetime</span></li>
+    </ul>
+    <div class="card-body-bo">
+    <button class="add"><a href="#"><i class='bx bx-plus'></i>Add to Cart</a></button> <br>
+    <button class="add"><a href="#"><i class='bx bxs-credit-card'></i>Buy Now</a></button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <!-- <-----------------------digi-end -->
+
+    <div class="container p-3 p-1" style="margin-top: -3rem; margin-right: 10rem;">
+      <div class="row">
+        <div class="col-lg-8 bg-white rounded-4 p-3">
+          <nav>
+            <div
+              class="nav nav-fill nav-underline p-3"
+              id="nav-tab"
+              role="tablist"
+            >
+              <button
+                class="nav-link active"
+                id="nav-home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-home"
+                type="button"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >
+                <p><i class="bi bi-bookmark me-3"></i> Overview</p>
+              </button>
+              <button
+                class="nav-link"
+                id="nav-profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-profile"
+                type="button"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+              >
+                <p><i class="bi bi-building me-3"></i> Curriculum</p>
+              </button>
+              <button
+                class="nav-link"
+                id="nav-contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-contact"
+                type="button"
+                role="tab"
+                aria-controls="nav-contact"
+                aria-selected="false"
+              >
+                <p><i class="bi bi-person me-3"></i> Instructor</p>
+              </button>
+              <button
+                class="nav-link"
+                id="nav-review-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-review"
+                type="button"
+                role="tab"
+                aria-controls="nav-review"
+                aria-selected="false"
+              >
+                <p><i class="bi bi-chat-left-text me-3"></i> Review</p>
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
+              tabindex="0"
+            >
+              <div class="pt-2">
+                <h4>Course description</h4>
+                <p>
+                  The Digital Skills course is a comprehensive exploration of
+                  essential competencies required in the digital era.
+                  Participants will navigate through foundational topics such as
+                  computer literacy, digital communication, information
+                  literacy, and online collaboration.
+                </p>
+                <p>
+                  The curriculum covers a range of skills crucial for personal
+                  and professional development in the digital age. From using
+                  productivity tools to effective online communication,
+                  participants will gain insights into leveraging technology to
+                  enhance their daily lives and work.
+                </p>
+                <p>
+                  Emphasis is placed on practical applications, ensuring
+                  participants can immediately implement and integrate digital
+                  skills into various aspects of their lives. Whether you're a
+                  beginner seeking to build a solid foundation or a professional
+                  aiming to stay ahead in the digital landscape, this course
+                  provides a holistic approach to mastering essential digital
+                  skills.
+                </p>
+                <h4>What will i learn?</h4>
+                <li>
+                  Upon completion of the Digital Skills course, participants
+                  will: Possess a solid understanding of foundational and
+                  advanced digital skills. Be proficient in computer literacy,
+                  digital communication, and online collaboration. Showcase
+                  hands-on experience through completed projects in digital
+                  skills applications. Have the skills and knowledge to navigate
+                  and excel in the digital landscape.
+                </li>
+                <h4>Requirements</h4>
+                <li>
+                  No specific prerequisites, Access to a computer, Eagerness to
+                  learn and enhance digital skills
+                </li>
+                <h3 class="p-2">Frequently asked question</h3>
+                <div
+                  class="accordion accordion-flush p-3"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Is this course suitable for beginners with limited
+                        digital skills?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Yes, this course is designed for individuals at all
+                        skill levels, including beginners.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        What specific digital skills will be covered in the
+                        course?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        The course covers computer literacy, digital
+                        communication, information literacy, online
+                        collaboration, and more.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Are there practical hands-on activities and projects?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Yes, participants will engage in hands-on activities and
+                        projects to apply and reinforce digital skills concepts.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-profile"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+              tabindex="0"
+            >
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      <!-- <p>Week 1-2</p>
+                      <p>1 Lessons</p> -->
+                      Week 1-2
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <a href=""
+                        ><i class="bi bi-play-circle me-3"></i> Introduction to
+                        Digital Skills and Basic Computer Literacy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      Week 3-4
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <a href=""
+                        ><i class="bi bi-play-circle me-3"></i> Introduction to
+                        Digital Skills and Basic Computer Literacy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      Week 5-6
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <a href=""
+                        ><i class="bi bi-play-circle me-3"></i> Introduction to
+                        Digital Skills and Basic Computer Literacy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
+                      Week 7-8
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <a href=""
+                        ><i class="bi bi-play-circle me-3"></i> Introduction to
+                        Digital Skills and Basic Computer Literacy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFive"
+                    >
+                      Week 9-10
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <a href=""
+                        ><i class="bi bi-play-circle me-3"></i> Introduction to
+                        Digital Skills and Basic Computer Literacy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSix"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSix"
+                    >
+                      Week 11-12
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <a href=""
+                        ><i class="bi bi-play-circle me-3"></i> Introduction to
+                        Digital Skills and Basic Computer Literacy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSeven"
+                    >
+                      Final Project
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseSeven"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <a href=""
+                        ><i class="bi bi-play-circle me-3"></i> Introduction to
+                        Digital Skills and Basic Computer Literacy</a
+                      >
+                      <a href=""
+                        ><i class="bi bi-play-circle me-3"></i> Introduction to
+                        Digital Skills and Basic Computer Literacy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-contact"
+              role="tabpanel"
+              aria-labelledby="nav-contact-tab"
+              tabindex="0"
+            >
+              <div class="card mb-3 w-100 border-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-md-4">
+                    <img
+                      src="images/img-1.jpg"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Tech Admin</h5>
+                      <p class="card-text">
+                        Tech Admin An academy that is focused on equipping
+                        youths with the knowledge and skills needed in the tech
+                        space.
+                      </p>
+                      <!-- <p class="card-text">
+                        <small class="text-body-secondary"
+                          >Last updated 3 mins ago</small
+                        >
+                      </p> -->
+                      <div class="socials">
+                        <i
+                          class="bi bi-twitter border border-dark p-2 rounded-2 ms-1"
+                        ></i>
+                        <i
+                          class="bi bi-linkedin border border-dark p-2 rounded-2 ms-1"
+                        ></i>
+                        <button class="btn btn-primary px-5 ms-3">
+                          View Profile
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-review"
+              role="tabpanel"
+              aria-labelledby="nav-review-tab"
+              tabindex="0"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              porro numquam aliquam totam nulla quo mollitia, tempora explicabo?
+              Perferendis, facilis?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <h2 class="ms-5">Related courses</h2>
+  <div class="rela" style="margin-left: 50px; margin-right:50px; margin-top: 30px;  gap: 0.5cm;">
+    <div class="card" style="width: 18rem;">
+      <img src="img/front.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Frontend Development</h5>
+        <span class="d-flex">
+          <p>0<i class='bx bx-star'></i>(0 Reviews)</p>
+          <button class="pri">compare</button>
+        </span>
+        <p class="card-text ">This comprehensive Front-End <br>Development course is your gateway ...</p>
+        <hr>
+        <span class="d-flex gap-2">
+          <p class="fw-bolder fs-5">#200,000</p>
+          <i class='bx bx-time-five fs-5 mt-2'></i>
+          <p class="mt-2 fs-6">00:00:00 Hours</p>
+        </span>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="img/back.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Backend Development</h5>
+        <span class="d-flex">
+          <p>0<i class='bx bx-star'></i>(0 Reviews)</p>
+          <button class="pri">compare</button>
+        </span>
+        <p class="card-text ">Embark on a transformation journey <br>
+          into Back-End Development with our...</p>
+        <hr>
+        <span class="d-flex gap-2">
+          <p class="fw-bolder fs-5">#200,000</p>
+          <i class='bx bx-time-five fs-5 mt-2'></i>
+          <p class="mt-2 fs-6">00:00:00 Hours</p>
+        </span>
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="img/full.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Full-stack Development</h5>
+        <span class="d-flex">
+          <p>0<i class='bx bx-star'></i>(0 Reviews)</p>
+          <button class="pri">compare</button>
+        </span>
+        <p class="card-text ">Embark on a transformation journey <br>
+          into Full stack Development with our...</p>
+        <hr>
+        <span class="d-flex gap-2">
+          <p class="fw-bolder fs-5">#300,000</p>
+          <i class='bx bx-time-five fs-5 mt-2'></i>
+          <p class="mt-2 fs-6">00:00:00 Hours</p>
+        </span>
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="img/java.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Javascript Development</h5>
+        <span class="d-flex">
+          <p>0<i class='bx bx-star'></i>(0 Reviews)</p>
+          <button class="pri">compare</button>
+        </span>
+        <p class="card-text ">Master the art of Javascript <br> programming with our dedicated</p>
+        <hr>
+        <span class="d-flex gap-2">
+          <p class="fw-bolder fs-5">#100,000</p>
+          <i class='bx bx-time-five fs-5 mt-2'></i>
+          <p class="mt-2 fs-6">00:00:00 Hours</p>
+        </span>
+      </div>
+    </div>
+
+  </div>
+  <div style="margin-left: 50px; margin-top: 20px;">
+    <div class="card" style="width: 18rem;">
+      <img src="img/digital.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Digital Skills</h5>
+        <span class="d-flex">
+          <p>0<i class='bx bx-star'></i>(0 Reviews)</p>
+          <button class="pri">compare</button>
+        </span>
+        <p class="card-text">Empower yourself with our Digital Skills <br>course, designed to equip individuals ...</p>
+        <hr>
+        <span class="d-flex gap-2">
+          <p class="fw-bolder fs-5">#100,000</p>
+          <i class='bx bx-time-five fs-5 mt-2'></i>
+          <p class="mt-2 fs-6">00:00:00 Hours</p>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

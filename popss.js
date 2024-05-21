@@ -21,10 +21,10 @@ $(document).ready(function () {
   const tooltipContent = [...tooltipTrigger].map(tooltipEl => new bootstrap.Tooltip(tooltipEl));
 
   const pythonCard = [ 
-    {img: 'pythonimg.jpg',price: '41,900', text:'Automate The Boring Stuff with Python Programming ',ctext:'Ai Sweigart'},
-    {img: 'womanpython.jpg',price: '41,900' , text:'100 Days of coding:The <br> complete python pro..',ctext:'Dr Anjela Yu'},
-    {img: 'torch.jpg',price: '41,900', text:'The complete Python Bootcamp From Zero to He.',ctext:' Jose Portilla,Pierian training'},
-    {img: 'rev.jpg',price: '41,900' , text:'Python Programming-From Basics to Advanced Level...',ctext:'Dipesh sharma'}
+    {img: 'img/pythonimg.jpg',price: '41,900', text:'Automate The Boring Stuff with Python Programming ',ctext:'Ai Sweigart'},
+    {img: 'img/womanpython.jpg',price: '41,900' , text:'100 Days of coding:The <br> complete python pro..',ctext:'Dr Anjela Yu'},
+    {img: 'img/torch.jpg',price: '41,900', text:'The complete Python Bootcamp From Zero to He.',ctext:' Jose Portilla,Pierian training'},
+    {img: 'img/rev.jpg',price: '41,900' , text:'Python Programming-From Basics to Advanced Level...',ctext:'Dipesh sharma'}
 
     ];
     let caro = document.querySelector('.owl-carousel');

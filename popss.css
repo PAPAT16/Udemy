@@ -14,15 +14,17 @@
     margin-left: 20px;
 }
 .choo h1{
-font-family: 'Times New Roman', Times, serif;
-font-weight: 800;
+    margin-top: 50px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 500;
 }
 .choo p{
     font-size: 20px;
-    color: rgb(255, 254, 254);
+    color: rgb(23,23,84);
 }
 .nav-tabs,.tab-content{
     margin-left: 20px;
+    margin-bottom: 50px;
 }
 .tab-content{
     border: 1px solid gray;

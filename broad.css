@@ -1,11 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     margin: 0%;
     padding: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(23,23,84);
 }
-.sea{
-    width: 500px;
-    border-radius: 50px;
+
+.digi{
+    /* position: absolute; */
+    background-color:  rgb(214,246,248);
+    color: rgb(23,23,84);
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    font-family: "Open Sans", sans-serif ,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      outline: none;
+}
+.digi p{
+font-size: 20px;
+}
+.pri{
+    padding: none;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    padding: 3px;
+    background-color: rgb(23,23,84);
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.card-img-top:hover{
+ transform: scale(1.1);
+ transition: 0.4s  ease-out;
+}
+.card-text{
+    font-size: 13px;
+} 
+.card:hover{
+    color: rgb(4, 98, 142);
+}
+.rela{
+    display: flex;
+}
+.sta{
+    display: flex;
+}
+@media screen and (max-width:769px) {
+    .rela{
+        display: inline-block;
+    }
+    .sta{
+        display: block;
+    }
+    .card-o{
+        margin-left: 90px;
+        margin-bottom: 20px;
+        float: none;
+        margin-top: -100px;
+    }  
+    .digi{
+        margin-bottom: 100px;
+    }  
+}
+.accordion-body{
+    position: relative;
+    
+}
+.accordion-body a{
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 7px;
+    color: black;
+}
+.accordion-body a:hover{
+    background-color: #ede5e5;
+}
+.add{
+    border: none;
+    background-color:rgb(23,23,84) ;
     padding: 10px;
-    outline: none;
+    border-radius: 10px;
+    margin: 5px;
+    width: 230px;
+}
+.add i{
+    color: white;
+}
+.add a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.card-o{
+/* position:sticky; */
+background-color: white;
+padding: 5px;
+border-radius: 7px;
+}
+.card-img-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;    
+}
+.card-body-bo{
+    margin-left: 40px;
+}
+.list-group-item{
+font-size: 20px;
+}
+.list-group-item span{
+    margin-left: 50px;
+    text-align: center;
 }
